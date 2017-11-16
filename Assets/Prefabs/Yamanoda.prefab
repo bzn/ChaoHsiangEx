@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4755228071279636}
   - component: {fileID: 108991957640796402}
-  - component: {fileID: 114044910239032374}
   - component: {fileID: 114130017623581560}
   m_Layer: 0
   m_Name: Point light
@@ -71,7 +70,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4729094833584314}
   - component: {fileID: 108448371168090636}
-  - component: {fileID: 114164842973883620}
   - component: {fileID: 114410240644465622}
   m_Layer: 0
   m_Name: Point light (1)
@@ -144,6 +142,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -159,6 +158,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -246,30 +246,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114044910239032374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1667483194594892}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097385f2a510795498370c4d62e61572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IntensityMult: 1
-  m_RangeMult: 3
-  m_ForceOnForFog: 0
-  m_Shadows: 0
-  m_ShadowmapRes: 256
-  m_BlurIterations: 0
-  m_BlurSize: 1
-  m_ESMExponent: 40
-  m_Bounded: 1
-  m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
-    type: 3}
-  m_CopyShadowParamsShader: {fileID: 4800000, guid: 33fc45db43408764c8dd7647b877e561,
-    type: 3}
 --- !u!114 &114130017623581560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -291,30 +267,6 @@ MonoBehaviour:
   _rotationScale: {x: 1, y: 1, z: 0}
   _positionFractalLevel: 3
   _rotationFractalLevel: 3
---- !u!114 &114164842973883620
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1989327601182744}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097385f2a510795498370c4d62e61572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IntensityMult: 1
-  m_RangeMult: 3
-  m_ForceOnForFog: 0
-  m_Shadows: 0
-  m_ShadowmapRes: 256
-  m_BlurIterations: 0
-  m_BlurSize: 1
-  m_ESMExponent: 40
-  m_Bounded: 1
-  m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
-    type: 3}
-  m_CopyShadowParamsShader: {fileID: 4800000, guid: 33fc45db43408764c8dd7647b877e561,
-    type: 3}
 --- !u!114 &114410240644465622
 MonoBehaviour:
   m_ObjectHideFlags: 1
